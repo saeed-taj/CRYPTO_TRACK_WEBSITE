@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className = 'navbar'>
         
-        <img src = {logo} alt = ""  />
+        <img src = {logo} alt = "" className  = 'logo' />
 
 
       <ul>
@@ -27,10 +27,10 @@ const Navbar = () => {
                 <option value="usd"> USD </option>
                 <option value="eur"> EUR </option>
                 <option value="pkr"> PKR </option>
+                </select>
+       <button> Sign up <img src = {arrow_icon} alt = "" /></button>
 
-       <button> Sign up <img src = {logo} alt = "" /></button>
-
-                 </select>
+                 
 
             </div>
     </div>

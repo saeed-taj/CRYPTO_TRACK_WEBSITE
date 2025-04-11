@@ -1,16 +1,23 @@
 import React from 'react' 
-import Navbar from './components/Navbar/Navbar.jsx'
+import Navbar from './components/Navbar/Navbar'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Coin from './pages/Coin/Coin'
 
 const App = () => {
   return (
-    <div className = 'App'>
+    <div className = 'App'>  
        
      <Navbar />
+     
+    <Routes>
 
-      <h1>Hello World</h1>
-      <p>This is a simple React application.</p>
-    
+      <Route path = '/' element = {<Home />} /> 
+      <Route path = '/Coin/:CoinId' element = {<Coin />} />
+    </Routes>
+
+
     </div>
   );
 }
-export default App;
+export default App; 
